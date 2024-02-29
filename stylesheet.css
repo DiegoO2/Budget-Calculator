@@ -1,0 +1,79 @@
+/* font import */
+/* font-family: "Montserrat", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: rgb(51, 80, 154);
+    color: white;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.step {
+    height: 60%;
+    width: 70%;
+    background-color: rgb(238, 246, 255);
+    border: 1px black solid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.left {
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.loadBar {
+    padding: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    display:block;
+    width:4rem;
+    height:4rem;
+    border-radius:50%;
+    background-color:rgb(6, 53, 144);
+    box-shadow: 1px 1px 1px 1px;
+    color:white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.barOne{
+    display:block;
+    width:100%;
+    margin-left: 2rem;
+    height: 2rem;
+    content: "";
+    border-radius: 2rem;
+    background-color:red;
+}
