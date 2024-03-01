@@ -18,6 +18,7 @@ header {
     color: white;
     padding: 2rem;
     margin-bottom: 2rem;
+    box-shadow: 0px 9px 37px -8px rgba(0,0,0,0.6);
 }
 
 h1 {
@@ -47,16 +48,15 @@ main {
     width: 100%;
     display: flex;
     flex-flow: row;
-    justify-content: center;
     align-items: center;
 }
 .circle{
     display:block;
-    width:4rem;
-    height:4rem;
+    width:5rem;
+    height:5rem;
     border-radius:50%;
     background-color:rgb(6, 53, 144);
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 0px 9px 19px -8px rgba(0,0,0,0.6);
     color:white;
     display: flex;
     flex-flow: row wrap;
@@ -129,3 +129,18 @@ main {
     align-items: center;
     text-decoration: none;
 }
+progress {
+    border-radius: 20%; 
+    height: 1rem;
+    margin-left: 1rem;
+    flex-grow: 1;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #ACC4F4;
+    border-radius: 7px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #2B62CC;
+    border-radius: 7px;
+  }
+  
