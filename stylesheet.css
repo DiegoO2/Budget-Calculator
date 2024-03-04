@@ -11,12 +11,12 @@
 }
 
 html {
-    height: 100lvh;
+    height: 100dvh;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
-    height: 100svh;
+    height: 100dvh;
 }
 
 header {
@@ -34,6 +34,7 @@ footer {
 
 h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
 main {
@@ -46,7 +47,7 @@ main {
 
 .content {
     width: 80%;
-    height: 70%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -56,6 +57,10 @@ main {
 
 .bar {
     width:100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
 }
 ul {
     width: 80%;
@@ -66,8 +71,14 @@ ul {
     align-items: center;
 }
 
+ul img{
+    width: fit-content;
+    height: 7rem;
+    
+}
+
 .step {
-    height: 60%;
+    height: 80%;
     width: 100%;
     background-color: rgb(238, 246, 255);
     border: 1px black solid;
@@ -98,6 +109,10 @@ ul {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    text-decoration: none;
+}
+.noIn {
+    background-color: #4474D2;
 }
 .barOne{
     display:block;
@@ -120,10 +135,38 @@ ul {
 }
 .left h2{
     margin: 1.5rem 0;
+    font-size: 2rem;
+}
+.leftContent{
+    width: 100%;
+}
+.leftContent label, input{
+    font-size: 1.2rem;
 }
 .leftContent form div{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
     margin: .7rem 0;
+}
+#totalTaxes{
+    flex-grow: 0;
+    width: 3rem;
+    text-align: center;
+}
+#taxes{
+    width: 10%;
+    
+}
+.leftContent form div p{
+    margin-left: 1rem;
+}
+.leftContent form input{
+    border-radius: 1rem;
+    padding:0.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .right {
     display: flex;
@@ -138,6 +181,7 @@ ul {
 .right h2{
     width: 100%;
     text-align: center;
+    font-size: 2rem;
 }
 .rNumbers, .rTitles{
     width: 30%;
