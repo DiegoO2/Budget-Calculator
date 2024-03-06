@@ -1,308 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Options</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="logic.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Career Options</h1>
     </header>
-    <main>
-        <pre>
-Accountant
-
-Adv. Tractor/Trailer Driver
-
-Agricultural Engineer
-
-Architect
-
-Auto Tech/Mechanic
-
-Aviation Tech/Mechanic
-
-Biologist
-
-Bus Driver
-
-Business Dev. Officer
-
-Business Manager
-
-CNC Manufacturing
-
-Carpenter
-
-Chef
-
-Chemist Civil Eng.
-
-Civil Engineering Tech.
-
-Commercial Driver
-
-Computer Technician
-
-Correctional Officer
-
-Cosmetologist
-
-Credit Union/Bank Mgr
-
-Daycare Director
-
-Dentist
-
-Detective
-
-Diesel Tech/Mechanic
-
-Doctor/Physician
-
-Electrician
-
-Electronic Engineer
-
-EMT
-
-Energy Mgmt
-
-Engineer
-
-Environmental Scientist
-
-Fashion Designer
-
-Fire Fighter
-
-Forensic Pathologist
-
-Forest Ranger
-
-Graphic Design Spec.
-
-H/C HVAC
-
-Highway Patrol
-
-Home Inspector
-        </pre>
-        <pre>
-$63,247.00
-
-$60,663.00
-
-$78,585.00
-
-$53,795.00
-
-$52,000.00
-
-$64,761.00
-
-$56,640.00
-
-$40,320.00
-
-$65,762.00
-
-$69,807.00
-
-$78,020.00
-
-$54,010.00
-
-$69,382.00
-
-$58,808.00
-
-$59,488.00
-
-$50,200.00
-
-$48,000.00
-
-$51,000.00
-
-$41,000.00
-
-$72,000.00
-
-$43,000.00
-
-$154,000.00
-
-$62,000.00
-
-$60,000.00
-
-$170,000.00
-
-$64,000.00
-
-$83,000.00
-
-$46,000.00
-
-$80,000.00
-
-$71,000.00
-
-$69,300.00
-
-$67,000.00
-
-$72,000.00
-
-$78,500.00
-
-$61,000.00
-
-$59,000.00
-
-$61,000.00
-
-$85,000.00
-
-$56,000.00
-        </pre>
-        <pre>
-Industrial Mechanic
-
-Interior Designer
-
-Investment Analyst
-
-Lab Technician
-
-Landscaper/Horticulture
-
-Lawyer
-
-Marketing/Sales Mgr
-
-Media/Communications
-
-Medical Repair Tech.
-
-Military
-
-Nurse
-
-Nutritionist
-
-Oceanographer
-
-Pastor
-
-PG&E\AT&T Tech.
-
-Pharmacist
-
-Photographer
-
-Physical Therapist
-
-Pilot (Commercial)
-
-Plumber
-
-Police Officer
-
-Principal
-
-Probation Officer
-
-Psychologist
-
-Retail Sales Associate
-
-Social Worker
-
-Solar Energy Tech.
-
-Speech Pathologist
-
-Teacher
-
-UPS/Fed Ex Driver
-
-Veterinarian
-
-Welder/Metal Spec.
-
-Wind Energy Tech.
-        </pre>
-<pre>
-$48,000.00
-
-$63,000.00
-
-$75,000.00
-
-$53,000.00
-
-$46,000.00
-
-$93,000.00
-
-$85,000.00
-
-$57,000.00
-
-$56,000.00
-
-$53,000.00
-
-$80,000.00
-
-$57,000.00
-
-$78,500.00
-
-$70,000.00
-
-$60,000.00
-
-$110,000.00
-
-$46,000.00
-
-$82,400.00
-
-$50,600.00
-
-$60,320.00
-
-$57,000.00
-
-$91,000.00
-
-$56,000.00
-
-$86,500.00
-
-$39,000.00
-
-$76,200.00
-
-$60,320.00
-
-$100,000.00
-
-$57,600.00
-
-$55,000.00
-
-$112,000.00
-
-$66,000.00
-
-$66,700.00
-</pre>
-<a href="index.html">Go Back</a>
+    <main class="careerMain">
+        <h2 class="careerH2">Select your career</h2>
+        <form class="careerForm">
+            <section class="formLeft">
+            <div>
+                <input type="radio" id="accountant" name="careerOptions" value="63247.00">
+                <label for="accountant">Accountant - $63,247.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="advTractorDriver" name="careerOptions" value="60663.00">
+                <label for="advTractorDriver">Adv. Tractor/Trailer Driver - $60,663.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="agriculturalEngineer" name="careerOptions" value="78585.00">
+                <label for="agriculturalEngineer">Agricultural Engineer - $78,585.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="architect" name="careerOptions" value="53795.00">
+                <label for="architect">Architect - $53,795.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="autoTechMechanic" name="careerOptions" value="52000.00">
+                <label for="autoTechMechanic">Auto Tech/Mechanic - $52,000.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="aviationTechMechanic" name="careerOptions" value="64761.00">
+                <label for="aviationTechMechanic">Aviation Tech/Mechanic - $64,761.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="biologist" name="careerOptions" value="56640.00">
+                <label for="biologist">Biologist - $56,640.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="busDriver" name="careerOptions" value="40320.00">
+                <label for="busDriver">Bus Driver - $40,320.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="businessDevOfficer" name="careerOptions" value="65762.00">
+                <label for="businessDevOfficer">Business Dev. Officer - $65,762.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="businessManager" name="careerOptions" value="69807.00">
+                <label for="businessManager">Business Manager - $69,807.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="cncManufacturing" name="careerOptions" value="78020.00">
+                <label for="cncManufacturing">CNC Manufacturing - $78,020.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="carpenter" name="careerOptions" value="54010.00">
+                <label for="carpenter">Carpenter - $54,010.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="chef" name="careerOptions" value="69382.00">
+                <label for="chef">Chef - $69,382.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="chemistCivilEng" name="careerOptions" value="58808.00">
+                <label for="chemistCivilEng">Chemist Civil Eng. - $58,808.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="civilEngTech" name="careerOptions" value="59488.00">
+                <label for="civilEngTech">Civil Engineering Tech. - $59,488.00</label><br>
+            </div>
+            <div>
+                <input type="radio" id="commercialDriver" name="careerOptions" value="50200.00">
+                <label for="commercialDriver">Commercial Driver - $50,200.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="computerTechnician" name="careerOptions" value="48000.00">
+                <label for="computerTechnician">Computer Technician - $48,000.00</label><br>
+            </div>
+
+            <div>
+                <input type="radio" id="correctionalOfficer" name="careerOptions" value="51000.00">
+                <label for="correctionalOfficer">Correctional Officer - $51,000.00</label><br>
+            </div>
+
+            </section>
+            <section class="middleLeft">
+
+                <div>
+                    <input type="radio" id="cosmetologist" name="careerOptions" value="41000.00">
+                    <label for="cosmetologist">Cosmetologist - $41,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="creditUnionBankMgr" name="careerOptions" value="72000.00">
+                    <label for="creditUnionBankMgr">Credit Union/Bank Mgr - $72,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="daycareDirector" name="careerOptions" value="43000.00">
+                    <label for="daycareDirector">Daycare Director - $43,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="dentist" name="careerOptions" value="154000.00">
+                    <label for="dentist">Dentist - $154,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="detective" name="careerOptions" value="62000.00">
+                    <label for="detective">Detective - $62,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="dieselTechMechanic" name="careerOptions" value="60000.00">
+                    <label for="dieselTechMechanic">Diesel Tech/Mechanic - $60,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="doctorPhysician" name="careerOptions" value="170000.00">
+                    <label for="doctorPhysician">Doctor/Physician - $170,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="electrician" name="careerOptions" value="64000.00">
+                    <label for="electrician">Electrician - $64,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="electronicEngineer" name="careerOptions" value="83000.00">
+                    <label for="electronicEngineer">Electronic Engineer - $83,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="emt" name="careerOptions" value="46000.00">
+                    <label for="emt">EMT - $46,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="energyMgmt" name="careerOptions" value="80000.00">
+                    <label for="energyMgmt">Energy Mgmt - $80,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="engineer" name="careerOptions" value="71000.00">
+                    <label for="engineer">Engineer - $71,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="environmentalScientist" name="careerOptions" value="69300.00">
+                    <label for="environmentalScientist">Environmental Scientist - $69,300.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="fashionDesigner" name="careerOptions" value="67000.00">
+                    <label for="fashionDesigner">Fashion Designer - $67,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="fireFighter" name="careerOptions" value="72000.00">
+                    <label for="fireFighter">Fire Fighter - $72,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="forensicPathologist" name="careerOptions" value="78500.00">
+                    <label for="forensicPathologist">Forensic Pathologist - $78,500.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="forestRanger" name="careerOptions" value="61000.00">
+                    <label for="forestRanger">Forest Ranger - $61,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="graphicDesignSpec" name="careerOptions" value="59000.00">
+                    <label for="graphicDesignSpec">Graphic Design Spec. - $59,000.00</label><br>
+                </div>
+    
+            </section>
+            <section class="middleRight">
+                <div>
+                    <input type="radio" id="hchvac" name="careerOptions" value="61000.00">
+                    <label for="hchvac">H/C HVAC - $61,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="highwayPatrol" name="careerOptions" value="85000.00">
+                    <label for="highwayPatrol">Highway Patrol - $85,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="homeInspector" name="careerOptions" value="56000.00">
+                    <label for="homeInspector">Home Inspector - $56,000.00</label><br>
+                </div>
+    
+    
+                <div>
+                    <input type="radio" id="industrialMechanic" name="careerOptions" value="48000.00">
+                    <label for="industrialMechanic">Industrial Mechanic - $48,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="interiorDesigner" name="careerOptions" value="63000.00">
+                    <label for="interiorDesigner">Interior Designer - $63,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="investmentAnalyst" name="careerOptions" value="75000.00">
+                    <label for="investmentAnalyst">Investment Analyst - $75,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="labTechnician" name="careerOptions" value="53000.00">
+                    <label for="labTechnician">Lab Technician - $53,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="landscaperHorticulture" name="careerOptions" value="46000.00">
+                    <label for="landscaperHorticulture">Landscaper/Horticulture - $46,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="lawyer" name="careerOptions" value="93000.00">
+                    <label for="lawyer">Lawyer - $93,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="marketingSalesMgr" name="careerOptions" value="85000.00">
+                    <label for="marketingSalesMgr">Marketing/Sales Mgr - $85,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="mediaCommunications" name="careerOptions" value="57000.00">
+                    <label for="mediaCommunications">Media/Communications - $57,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="medicalRepairTech" name="careerOptions" value="56000.00">
+                    <label for="medicalRepairTech">Medical Repair Tech. - $56,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="military" name="careerOptions" value="53000.00">
+                    <label for="military">Military - $53,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="nurse" name="careerOptions" value="80000.00">
+                    <label for="nurse">Nurse - $80,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="nutritionist" name="careerOptions" value="57000.00">
+                    <label for="nutritionist">Nutritionist - $57,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="oceanographer" name="careerOptions" value="78500.00">
+                    <label for="oceanographer">Oceanographer - $78,500.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="pastor" name="careerOptions" value="70000.00">
+                    <label for="pastor">Pastor - $70,000.00</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="pgEATTTech" name="careerOptions" value="60000.00">
+                    <label for="pgEATTTech">PG&E\AT&T Tech. - $60,000.00</label><br>
+                </div>
+            </section>
+            <section class="formRight">
+                <div>
+                    <input type="radio" id="pharmacist" name="careerOptions" value="110000.00">
+                    <label for="pharmacist">Pharmacist - $110,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="photographer" name="careerOptions" value="46000.00">
+                    <label for="photographer">Photographer - $46,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="physicalTherapist" name="careerOptions" value="82400.00">
+                    <label for="physicalTherapist">Physical Therapist - $82,400.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="pilotCommercial" name="careerOptions" value="50600.00">
+                    <label for="pilotCommercial">Pilot (Commercial) - $50,600.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="plumber" name="careerOptions" value="60320.00">
+                    <label for="plumber">Plumber - $60,320.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="policeOfficer" name="careerOptions" value="57000.00">
+                    <label for="policeOfficer">Police Officer - $57,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="principal" name="careerOptions" value="91000.00">
+                    <label for="principal">Principal - $91,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="probationOfficer" name="careerOptions" value="56000.00">
+                    <label for="probationOfficer">Probation Officer - $56,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="psychologist" name="careerOptions" value="86500.00">
+                    <label for="psychologist">Psychologist - $86,500.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="retailSalesAssociate" name="careerOptions" value="39000.00">
+                    <label for="retailSalesAssociate">Retail Sales Associate - $39,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="socialWorker" name="careerOptions" value="76200.00">
+                    <label for="socialWorker">Social Worker - $76,200.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="solarEnergyTech" name="careerOptions" value="60320.00">
+                    <label for="solarEnergyTech">Solar Energy Tech. - $60,320.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="speechPathologist" name="careerOptions" value="100000.00">
+                    <label for="speechPathologist">Speech Pathologist - $100,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="teacher" name="careerOptions" value="57600.00">
+                    <label for="teacher">Teacher - $57,600.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="upsFedExDriver" name="careerOptions" value="55000.00">
+                    <label for="upsFedExDriver">UPS/Fed Ex Driver - $55,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="veterinarian" name="careerOptions" value="112000.00">
+                    <label for="veterinarian">Veterinarian - $112,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="welderMetalSpec" name="careerOptions" value="66000.00">
+                    <label for="welderMetalSpec">Welder/Metal Spec. - $66,000.00</label><br>
+                </div>
+    
+                <div>
+                    <input type="radio" id="windEnergyTech" name="careerOptions" value="66700.00">
+                    <label for="windEnergyTech">Wind Energy Tech - $66,700.00</label><br>
+                </div>
+    
+            </section>
+
+        </form>
+        <div class='careerButtons'>
+            <a href="index.html" id="careerBackButton">Go Back</a>
+            <a href="index.html" id="careerNextButton">Select career</a>
+        </div>
     </main>
     <footer>
         <h3>Footer</h3>
@@ -310,4 +396,5 @@ $66,700.00
         <p>Diego Hidalgo</p>
     </footer>
 </body>
+
 </html>
