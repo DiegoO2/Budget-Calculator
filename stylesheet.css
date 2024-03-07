@@ -22,7 +22,9 @@ body {
     font-family: "Montserrat", sans-serif;
     height: 100dvh;
 }
-
+body.careerBody {
+    height: auto;
+}
 header {
     background-color: rgb(51, 80, 154);
     color: white;
@@ -55,7 +57,8 @@ h2.careerH2 {
     width: 100%;
     margin-left: 10%;
     font-size: 2rem;
-    height: 20%;
+    height: 15%;
+    margin: 3rem;
 }
 
 main.careerMain {
@@ -313,7 +316,7 @@ progress::-webkit-progress-value {
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem;
+    margin: 3rem;
 }
 
 #careerOptions {
@@ -353,6 +356,7 @@ progress::-webkit-progress-value {
     align-items: center;
     width: 20%;
     height: 40%;
+    padding: 1.3rem 0;
     text-decoration: none;
 }
 
@@ -408,11 +412,31 @@ footer {
 footer h3 {
     font-size: 1.5rem;
 }
-
+footer.careerFooter {
+    padding: 1rem;
+}
 .displayNone {
     display: none;
 }
 
 .displayNoneflex {
     display: flex;
+}
+
+
+@media screen and (max-width: 600px) {
+    .careerContent div {
+        width: 100%;
+        margin-bottom: .5rem;
+        font-size: 1rem;
+    }
+    #careerBackButton,
+    #careerNextButton {
+    width: 40%;
+    height: 40%;
+}
+h2.careerH2{
+    font-size: 1.5rem;
+}
+
 }
