@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="logic.js"></script>
+    <script src="steps.js"></script>
+    <script src="budgetCalcualtions.js"></script>
 </head>
 
 <body>
@@ -56,8 +57,8 @@
                             </div>
                             <label for="totalTaxes">Total Taxes</label>
                             <div id="taxes">
-                                <input type="text" id="totalTaxes">
-                                <p>% (defualt value of California)</p>
+                                <input type="text" id="totalTaxes" value="32">
+                                <p>% (defualt tax of California)</p>
                             </div>
                             <label for="anotherIncome">Another Type of Income</label>
                             <div>
@@ -77,10 +78,10 @@
                         <p>Monthly total Entertainment</p>
                     </div>
                     <div class="rNumbers">
-                        <p>$10</p>
-                        <p>$10</p>
-                        <p>$10</p>
-                        <p>$10</p>
+                        <p id="monthIncome">$10</p>
+                        <p id="montSaving">$10</p>
+                        <p id="monthExpenses">$10</p>
+                        <p id="monthEntertainment">$10</p>
                     </div>
                     <div class="leftOver">
                         <p>Left Over</p>
@@ -129,10 +130,10 @@
                     <p>Monthly total Entertainment</p>
                 </div>
                 <div class="rNumbers">
-                    <p>$10</p>
-                    <p>$10</p>
-                    <p>$10</p>
-                    <p>$10</p>
+                        <p id="monthIncome">$10</p>
+                        <p id="montSaving">$10</p>
+                        <p id="monthExpenses">$10</p>
+                        <p id="monthEntertainment">$10</p>
                 </div>
                 <div class="leftOver">
                     <p>Left Over</p>
@@ -185,11 +186,11 @@
                     <p>Monthly total Entertainment</p>
                 </div>
                 <div class="rNumbers">
-                    <p>$10</p>
-                    <p>$10</p>
-                    <p>$10</p>
-                    <p>$10</p>
-                </div>
+                    <p id="monthIncome">$10</p>
+                    <p id="montSaving">$10</p>
+                    <p id="monthExpenses">$10</p>
+                    <p id="monthEntertainment">$10</p>
+            </div>
                 <div class="leftOver">
                     <p>Left Over</p>
                     <p id="leftOver">$</p>
@@ -241,11 +242,11 @@
                     <p>Monthly total Entertainment</p>
                 </div>
                 <div class="rNumbers">
-                    <p>$10</p>
-                    <p>$10</p>
-                    <p>$10</p>
-                    <p>$10</p>
-                </div>
+                    <p id="monthIncome">$10</p>
+                    <p id="montSaving">$10</p>
+                    <p id="monthExpenses">$10</p>
+                    <p id="monthEntertainment">$10</p>
+            </div>
                 <div class="leftOver">
                     <p>Left Over</p>
                     <p id="leftOver">$</p>
