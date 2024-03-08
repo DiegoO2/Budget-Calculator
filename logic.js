@@ -17,6 +17,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
             elementById("two").classList.add("displayFlex");
             elementById("one").classList.remove("displayFlex");
             elementById("one").classList.add("displayNone");
+
+            elementById("cTwo").classList.remove("noIn");
+            elementById("cOne").classList.add("noIn");
+
             step=2;
             break
         case 2:
@@ -24,6 +28,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
             elementById("three").classList.add("displayFlex");
             elementById("two").classList.remove("displayFlex");
             elementById("two").classList.add("displayNone");
+
+            elementById("cThree").classList.remove("noIn");
+            elementById("cTwo").classList.add("noIn");
+
             step=3;
             break
         case 3:
@@ -31,6 +39,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
             elementById("four").classList.add("displayFlex");
             elementById("three").classList.remove("displayFlex");
             elementById("three").classList.add("displayNone");
+
+            elementById("cFour").classList.remove("noIn");
+            elementById("cThree").classList.add("noIn");
+            
             step=4;
             break
         default:
@@ -45,6 +57,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 elementById("one").classList.add("displayFlex");
                 elementById("two").classList.remove("displayFlex");
                 elementById("two").classList.add("displayNone");
+
+                elementById("cTwo").classList.add("noIn");
+                elementById("cOne").classList.remove("noIn");
+    
                 step=1;
                 break
             case 3:
@@ -52,6 +68,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 elementById("two").classList.add("displayFlex");
                 elementById("three").classList.remove("displayFlex");
                 elementById("three").classList.add("displayNone");
+
+                elementById("cThree").classList.add("noIn");
+                elementById("cTwo").classList.remove("noIn");
+    
                 step=2;
                 break
             case 4:
@@ -60,6 +80,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 elementById("three").classList.add("displayFlex");
                 elementById("four").classList.remove("displayFlex");
                 elementById("four").classList.add("displayNone");
+
+                elementById("cFour").classList.add("noIn");
+                elementById("cThree").classList.remove("noIn");
+    
                 step=3;
                 break
             default:

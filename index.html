@@ -17,25 +17,25 @@
         <section class="bar">
             <ul>
                 <il>
-                    <a href="#" class="circle ">1</a>
+                    <a href="#" class="circle" id="cOne">1</a>
                 </il>
                 <il>
                     <img src="images/arrow.png" alt="Right facing arrow">
                 </il>
                 <il>
-                    <a href="#" class="circle noIn">2</a>
+                    <a href="#" class="circle noIn" id="cTwo">2</a>
                 </il>
                 <il>
                     <img src="images/arrow.png" alt="Right facing arrow">
                 </il>
                 <il>
-                    <a href="#" class="circle noIn">3</a>
+                    <a href="#" class="circle noIn" id="cThree">3</a>
                 </il>
                 <il>
                     <img src="images/arrow.png" alt="Right facing arrow">
                 </il>
                 <il>
-                    <a href="#" class="circle noIn">4</a>
+                    <a href="#" class="circle noIn" id="cFour">4</a>
                 </il>
             </ul>
         </section>
@@ -57,7 +57,7 @@
                             <label for="totalTaxes">Total Taxes</label>
                             <div id="taxes">
                                 <input type="text" id="totalTaxes">
-                                <p>%</p>
+                                <p>% (defualt value of California)</p>
                             </div>
                             <label for="anotherIncome">Another Type of Income</label>
                             <div>
@@ -82,7 +82,10 @@
                         <p>$10</p>
                         <p>$10</p>
                     </div>
-                    <a href="" class="leftOver">Left Over</a>
+                    <div class="leftOver">
+                        <p>Left Over</p>
+                        <p id="leftOver">$</p>
+                    </div>
                 </section>
             </section>
             <section class="step two" id="two">
@@ -131,8 +134,10 @@
                     <p>$10</p>
                     <p>$10</p>
                 </div>
-                <a href="" class="leftOver">Left Over</a>
-            </section>
+                <div class="leftOver">
+                    <p>Left Over</p>
+                    <p id="leftOver">$</p>
+                </div>            </section>
         </section>
         <section class="step three" id="three">
             <section class="left">
@@ -185,8 +190,10 @@
                     <p>$10</p>
                     <p>$10</p>
                 </div>
-                <a href="" class="leftOver">Left Over</a>
-            </section>
+                <div class="leftOver">
+                    <p>Left Over</p>
+                    <p id="leftOver">$</p>
+                </div>            </section>
         </section>
         <section class="step four" id="four">
             <section class="left">
@@ -239,7 +246,10 @@
                     <p>$10</p>
                     <p>$10</p>
                 </div>
-                <a href="" class="leftOver">Left Over</a>
+                <div class="leftOver">
+                    <p>Left Over</p>
+                    <p id="leftOver">$</p>
+                </div>
             </section>
         </section>
         

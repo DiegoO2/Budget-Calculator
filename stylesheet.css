@@ -91,6 +91,7 @@ form.careerForm {
     align-self: center;
     width: 30%;
     font-size: 1.2rem;
+    margin-bottom: .5rem;
 
 }
 
@@ -162,7 +163,7 @@ ul img {
     text-decoration: none;
 }
 
-.noIn {
+a.noIn {
     background-color: #4474D2;
 }
 
@@ -182,6 +183,7 @@ ul img {
     height: 100%;
     padding: 2rem;
     width: 49%;
+    align-content: flex-start;
 }
 
 .step::after {
@@ -193,12 +195,13 @@ ul img {
 }
 
 .left h2 {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     font-size: 2rem;
 }
 
 .leftContent {
-    width: 100%;
+    width:100%;
+    height: 80%;
 }
 
 .leftContent label,
@@ -211,7 +214,7 @@ input {
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    margin: .7rem 0;
+    margin: .5rem 0;
 }
 
 #totalTaxes {
@@ -221,12 +224,14 @@ input {
 }
 
 #taxes {
-    width: 10%;
+    width: 100%;
 
 }
 
 .leftContent form div p {
     margin-left: 1rem;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .leftContent form input {
@@ -270,18 +275,22 @@ input {
     font-size: 1.2rem;
 }
 
-.right a {
+.leftOver {
     background-color: #008000;
     width: 100%;
-    height: 5rem;
+    height: 4.5rem;
     border-radius: 1rem;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    align-content: center;
+}
+.leftOver p {
+    width: 100%;
+    text-align: center;
 }
 
 progress {
@@ -329,6 +338,8 @@ progress::-webkit-progress-value {
     justify-content: center;
     align-items: center;
     width: 25%;
+    padding: 0 12.5%;
+    text-align: center;
     height: 3rem;
     text-decoration: none;
 }
