@@ -7,7 +7,6 @@
     <title>Budget Calculator</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="steps.js"></script>
-    <script src="budgetCalcualtions.js"></script>
 </head>
 
 <body>
@@ -83,7 +82,7 @@
                         <p id="monthExpenses">$10</p>
                         <p id="monthEntertainment">$10</p>
                     </div>
-                    <div class="leftOver">
+                    <div class="leftOver" id="divLeft">
                         <p>Left Over</p>
                         <p id="leftOver">$</p>
                     </div>
@@ -100,22 +99,22 @@
                     <form>
                         <label for="investment">Investment</label>
                         <div>
-                            <input type="number" id="investment">
+                            <input type="number" id="investment" class="inputS">
                             <p>Per Month</p>
                         </div>
                         <label for="savingAccount">Saving account</label>
                         <div>
-                            <input type="number" id="savingAccount">
+                            <input type="number" id="savingAccount" class="inputS">
                             <p>Per Month</p>
                         </div>
                         <label for="emergencyFund">Emergency Fund</label>
                         <div>
-                            <input type="number" id="emergencyFund">
+                            <input type="number" id="emergencyFund" class="inputS">
                             <p>Per Month</p>
                         </div>
                         <label for="retirement">Retirement</label>
                         <div>
-                            <input type="number" id="retirement">
+                            <input type="number" id="retirement" class="inputS">
                             <p>Per Month</p>
                         </div>
                     </form>
@@ -130,14 +129,14 @@
                     <p>Monthly total Entertainment</p>
                 </div>
                 <div class="rNumbers">
-                        <p id="monthIncome">$10</p>
-                        <p id="montSaving">$10</p>
-                        <p id="monthExpenses">$10</p>
-                        <p id="monthEntertainment">$10</p>
+                        <p id="monthIncome2">$10</p>
+                        <p id="montSaving2">$10</p>
+                        <p id="monthExpenses2">$10</p>
+                        <p id="monthEntertainment2">$10</p>
                 </div>
-                <div class="leftOver">
+                <div class="leftOver" id="divLeft2">
                     <p>Left Over</p>
-                    <p id="leftOver">$</p>
+                    <p id="leftOver2">$</p>
                 </div>            </section>
         </section>
         <section class="step three" id="three">
@@ -151,17 +150,17 @@
                     <form>
                         <label for="housing">Housing & Utilities</label>
                         <div>
-                            <input type="number" id="housing">
+                            <input type="number" id="housing" class="inputE">
                             <p>Per Month</p>
                         </div>
                         <label for="foodGroceries">Food & Groceries</label>
                         <div>
-                            <input type="number" id="foodGroceries">
+                            <input type="number" id="foodGroceries" class="inputE">
                             <p>Per Month</p>
                         </div>
                         <label for="transportation">Transportation</label>
                         <div>
-                            <input type="number" id="transportation">
+                            <input type="number" id="transportation" class="inputE">
                             <p>Per Month</p>
                         </div>
                         <!-- <label for="utilities">Utilities</label>
@@ -171,7 +170,7 @@
                         </div> -->
                         <label for="selfCare">Clothing & Self care</label>
                         <div>
-                            <input type="number" id="selfCare">
+                            <input type="number" id="selfCare" class="inputE">
                             <p>Per Month</p>
                         </div>
                     </form>
@@ -186,14 +185,14 @@
                     <p>Monthly total Entertainment</p>
                 </div>
                 <div class="rNumbers">
-                    <p id="monthIncome">$10</p>
-                    <p id="montSaving">$10</p>
-                    <p id="monthExpenses">$10</p>
-                    <p id="monthEntertainment">$10</p>
+                    <p id="monthIncome3">$10</p>
+                    <p id="montSaving3">$10</p>
+                    <p id="monthExpenses3">$10</p>
+                    <p id="monthEntertainment3">$10</p>
             </div>
-                <div class="leftOver">
+                <div class="leftOver" id="divLeft3">
                     <p>Left Over</p>
-                    <p id="leftOver">$</p>
+                    <p id="leftOver3">$</p>
                 </div>            </section>
         </section>
         <section class="step four" id="four">
@@ -207,12 +206,12 @@
                     <form>
                         <label for="streamingServices">Streaming Services/Media</label>
                         <div>
-                            <input type="number" id="streamingServices">
+                            <input type="number" id="streamingServices" class="inputEnt">
                             <p>Per Month</p>
                         </div>
                         <label for="vacations">Vacations</label>
                         <div>
-                            <input type="number" id="vacations">
+                            <input type="number" id="vacations" class="inputEnt">
                             <p>Per Month</p>
                         </div>
                         <!-- <label for="media">Media (Wifi Services)</label>
@@ -222,12 +221,12 @@
                         </div> -->
                         <label for="hobbies">Personal Hobbies</label>
                         <div>
-                            <input type="number" id="hobbies">
+                            <input type="number" id="hobbies" class="inputEnt">
                             <p>Per Month</p>
                         </div>
                         <label for="other">Other</label>
                         <div>
-                            <input type="number" id="other">
+                            <input type="number" id="other" class="inputEnt">
                             <p>Per Month</p>
                         </div>
                     </form>
@@ -242,14 +241,14 @@
                     <p>Monthly total Entertainment</p>
                 </div>
                 <div class="rNumbers">
-                    <p id="monthIncome">$10</p>
-                    <p id="montSaving">$10</p>
-                    <p id="monthExpenses">$10</p>
-                    <p id="monthEntertainment">$10</p>
+                    <p id="monthIncome4">$10</p>
+                    <p id="montSaving4">$10</p>
+                    <p id="monthExpenses4">$10</p>
+                    <p id="monthEntertainment4">$10</p>
             </div>
-                <div class="leftOver">
+                <div class="leftOver" id="divLeft4">
                     <p>Left Over</p>
-                    <p id="leftOver">$</p>
+                    <p id="leftOver4">$</p>
                 </div>
             </section>
         </section>
