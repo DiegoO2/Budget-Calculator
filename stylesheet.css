@@ -22,9 +22,11 @@ body {
     font-family: "Montserrat", sans-serif;
     height: 100dvh;
 }
+
 body.careerBody {
     height: auto;
 }
+
 header {
     background-color: rgb(51, 80, 154);
     color: white;
@@ -200,7 +202,7 @@ a.noIn {
 }
 
 .leftContent {
-    width:100%;
+    width: 100%;
     height: 80%;
 }
 
@@ -287,6 +289,7 @@ input {
     align-items: center;
     align-content: center;
 }
+
 .leftOver p {
     width: 100%;
     text-align: center;
@@ -422,9 +425,11 @@ footer {
 footer h3 {
     font-size: 1.5rem;
 }
+
 footer.careerFooter {
     padding: 1rem;
 }
+
 .displayNone {
     display: none;
 }
@@ -432,9 +437,11 @@ footer.careerFooter {
 .displayNoneflex {
     display: flex;
 }
+
 div.green {
     background-color: #008000;
 }
+
 div.red {
     background-color: rgb(131, 10, 10);
 }
@@ -445,13 +452,60 @@ div.red {
         margin-bottom: .5rem;
         font-size: 1rem;
     }
+
     #careerBackButton,
     #careerNextButton {
-    width: 40%;
-    height: 40%;
-}
-h2.careerH2{
-    font-size: 1.5rem;
-}
+        width: 40%;
+        height: 40%;
+    }
 
+    h2.careerH2 {
+        font-size: 1.5rem;
+    }
+    .bar {
+        display: none;
+    }
+    .step {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+    html{
+        width: 100%;
+        height: auto;
+    }
+    body {
+        width: 100%;
+        height: auto;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 1rem;
+    }
+    .leftContent form div {
+        width: 100%;
+    }
+    .leftContent form input{
+        flex-grow: 0;
+        width: 100%;
+    }
+    .rTitle p {
+        margin: 1rem 0;
+        font-size: 1ren;
+    }
+    .right h2, .left h2 {
+        font-size: 1.5rem;
+    }
+    .step::after {
+        width: 80%;
+        height: 1px;
+    }
+    .leftContent label {
+        font-size: 1rem;
+    }
+    .leftContent form div p{
+        font-size: .8rem;
+    }
+    .content {
+        width: 90%;
+    }
 }
