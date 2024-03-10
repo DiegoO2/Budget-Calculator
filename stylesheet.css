@@ -446,7 +446,7 @@ div.red {
     background-color: rgb(131, 10, 10);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .careerContent div {
         width: 100%;
         margin-bottom: .5rem;
@@ -462,7 +462,11 @@ div.red {
     h2.careerH2 {
         font-size: 1.5rem;
     }
-    .bar {
+    .bar ul{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .bar img{
         display: none;
     }
     .step {
@@ -488,12 +492,15 @@ div.red {
         flex-grow: 0;
         width: 100%;
     }
-    .rTitle p {
-        margin: 1rem 0;
-        font-size: 1ren;
+    .right p {
+        margin: 1.5rem 0;
+        font-size: 1rem;
     }
     .right h2, .left h2 {
         font-size: 1.5rem;
+    }
+    div.leftOver p {
+        margin: 0rem;
     }
     .step::after {
         width: 80%;
@@ -506,6 +513,68 @@ div.red {
         font-size: .8rem;
     }
     .content {
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .buttons {
+        height: 20%;
+        margin: 2rem;
+        margin-right: 5%;
+        width: 90%;
+
+    }
+    #nextButton,
+    #backButton {
+        padding: 1.3rem;
+    }
+    footer{
+        padding: 1rem;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;    
+    }
+    .rTitle {
+        width: 70%;
+    }
+    #careerOptions{
+        width: 40%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    header {
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-height: 900px) {
+    html{
+        width: 100%;
+        height: auto;
+    }
+    body {
+        width: 100%;
+        height: auto;
+    }
+    .buttons {
+        height: 20%;
+        margin: 2rem;
+        margin-right: 5%;
+
+    }
+    #nextButton,
+    #backButton {
+        padding: 1.3rem;
+    }
+    .content {
+        width: 90%;
+    }
+    footer {
+        padding: 1rem;
+    }
+    .bar ul{
+        padding: 1rem 0;
         width: 90%;
     }
 }
