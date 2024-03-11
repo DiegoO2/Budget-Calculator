@@ -11,7 +11,7 @@ document.getElementById("careerNextButton").addEventListener("click", function(e
 
     for(div of divArray){
         if (div.checked==true) {
-            localStorage.setItem("monthlyIncome", `${div.value/12}`);
+            localStorage.setItem("monthlyIncome", `${Math.round(div.value/12)}`);
         }
     }
     console.log(localStorage.getItem("monthlyIncome"))

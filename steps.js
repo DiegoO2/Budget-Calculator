@@ -2,7 +2,6 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     let elementById = function(id) {return document.getElementById(id)}
 
-    let addListener = function(id,event,code) {elementById(id).addEventListener(event, (eventData) => {code(eventData)})}
     elementById("one").classList.remove("displayFlex");
     elementById("two").classList.add("displayNone");
     elementById("three").classList.add("displayNone");
@@ -201,10 +200,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
             elementById("divLeft4").classList.remove("red");
 
         }
-        document.getElementById("leftOver").innerHTML = `$${leftOver}`;
-        document.getElementById("leftOver2").innerHTML = `$${leftOver}`;
-        document.getElementById("leftOver3").innerHTML = `$${leftOver}`;
-        document.getElementById("leftOver4").innerHTML = `$${leftOver}`;
+        document.getElementById("leftOver").innerHTML = `$${leftOver.toLocaleString('en-US')}`;
+        document.getElementById("leftOver2").innerHTML = `$${leftOver.toLocaleString('en-US')}`;
+        document.getElementById("leftOver3").innerHTML = `$${leftOver.toLocaleString('en-US')}`;
+        document.getElementById("leftOver4").innerHTML = `$${leftOver.toLocaleString('en-US')}`;
     }
     function setIncome(){
         taxer();
@@ -213,31 +212,31 @@ document.addEventListener(`DOMContentLoaded`, () => {
         }
         totalMonthIncome = monthlyIncome - monthlyIncome*mTax/100 + anotherIncome;
         totalMonthIncome = roundToCent(totalMonthIncome);
-        document.getElementById("monthIncome").innerHTML = `$${totalMonthIncome}`;
-        document.getElementById("monthIncome2").innerHTML = `$${totalMonthIncome}`;
-        document.getElementById("monthIncome3").innerHTML = `$${totalMonthIncome}`;
-        document.getElementById("monthIncome4").innerHTML = `$${totalMonthIncome}`;
+        document.getElementById("monthIncome").innerHTML = `$${totalMonthIncome.toLocaleString('en-US')}`;
+        document.getElementById("monthIncome2").innerHTML = `$${totalMonthIncome.toLocaleString('en-US')}`;
+        document.getElementById("monthIncome3").innerHTML = `$${totalMonthIncome.toLocaleString('en-US')}`;
+        document.getElementById("monthIncome4").innerHTML = `$${totalMonthIncome.toLocaleString('en-US')}`;
         setLeftOver();
     };
     function setSavings(){
-        document.getElementById("montSaving").innerHTML = `$${totalSavings}`;
-        document.getElementById("montSaving2").innerHTML = `$${totalSavings}`;
-        document.getElementById("montSaving3").innerHTML = `$${totalSavings}`;
-        document.getElementById("montSaving4").innerHTML = `$${totalSavings}`;
+        document.getElementById("montSaving").innerHTML = `$${totalSavings.toLocaleString('en-US')}`;
+        document.getElementById("montSaving2").innerHTML = `$${totalSavings.toLocaleString('en-US')}`;
+        document.getElementById("montSaving3").innerHTML = `$${totalSavings.toLocaleString('en-US')}`;
+        document.getElementById("montSaving4").innerHTML = `$${totalSavings.toLocaleString('en-US')}`;
         setLeftOver();
     };
     function setExpenses(){
-        document.getElementById("monthExpenses").innerHTML = `$${totalExpenses}`;
-        document.getElementById("monthExpenses2").innerHTML = `$${totalExpenses}`;
-        document.getElementById("monthExpenses3").innerHTML = `$${totalExpenses}`;
-        document.getElementById("monthExpenses4").innerHTML = `$${totalExpenses}`;
+        document.getElementById("monthExpenses").innerHTML = `$${totalExpenses.toLocaleString('en-US')}`;
+        document.getElementById("monthExpenses2").innerHTML = `$${totalExpenses.toLocaleString('en-US')}`;
+        document.getElementById("monthExpenses3").innerHTML = `$${totalExpenses.toLocaleString('en-US')}`;
+        document.getElementById("monthExpenses4").innerHTML = `$${totalExpenses.toLocaleString('en-US')}`;
         setLeftOver();
     };
     function setEntertainment(){
-        document.getElementById("monthEntertainment").innerHTML = `$${totalEntertainment}`;
-        document.getElementById("monthEntertainment2").innerHTML = `$${totalEntertainment}`;
-        document.getElementById("monthEntertainment3").innerHTML = `$${totalEntertainment}`;
-        document.getElementById("monthEntertainment4").innerHTML = `$${totalEntertainment}`;
+        document.getElementById("monthEntertainment").innerHTML = `$${totalEntertainment.toLocaleString('en-US')}`;
+        document.getElementById("monthEntertainment2").innerHTML = `$${totalEntertainment.toLocaleString('en-US')}`;
+        document.getElementById("monthEntertainment3").innerHTML = `$${totalEntertainment.toLocaleString('en-US')}`;
+        document.getElementById("monthEntertainment4").innerHTML = `$${totalEntertainment.toLocaleString('en-US')}`;
         setLeftOver();
     };
 
@@ -288,10 +287,6 @@ document.addEventListener(`DOMContentLoaded`, () => {
             setEntertainment();
         });
     });
-
-
-
-    console.log(step);
 
 
 

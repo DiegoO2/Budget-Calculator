@@ -403,13 +403,17 @@ progress::-webkit-progress-value {
     color: #4C78E8;
 }
 
-#careerNextButton:hover {
+#careerNextButton:hover ,#careerOptions:hover{
     background-color: #FFFFFF;
     color: #4C78E8;
 }
 
 #careerBackButton:hover {
     background-color: #4C78E8;
+    color: #FFFFFF;
+}
+#careerNextButton:active, #careerOptions:active, #careerNextButton:active, #nextButton:active, #backButton:active, #careerBackButton:active {
+    background-color: #000000;
     color: #FFFFFF;
 }
 
@@ -445,6 +449,9 @@ div.green {
 div.red {
     background-color: rgb(131, 10, 10);
 }
+.careerContent label {
+   margin-left: .5rem; 
+} 
 
 @media screen and (max-width: 1000px) {
     .careerContent div {
